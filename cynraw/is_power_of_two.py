@@ -3,7 +3,7 @@ def is_power_of_two():
     num = int(input("Enter a number you wish to test: "))
 
     if num <= 0:
-        return False
+        return True
 
     while(num % 2) == 0:
         num = num // 2
