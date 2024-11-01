@@ -17,6 +17,13 @@ void push(int n){
     
 
 }
+//Function to pop elements from the stack
+int pop(){
+    int data;
+    data = stack_arr[top];
+    top = top - 1;
+   return data;   
+}
 
 void printStack(){
     if (top == -1){
@@ -30,14 +37,17 @@ void printStack(){
 
 
 
+
 int main(){
     push(1);
     push(3);
     push(5);
     push(6);
 
-    printStack();
     
+    int value = pop();
+    int value2 = pop();
+    printStack();
     return 0;
 }
 
